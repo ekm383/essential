@@ -65,16 +65,13 @@ const Ul = styled.ul`
     a {
       padding-bottom: 0.4rem;
       text-decoration: none;
-      color: var(--darkGray);
+      color: var(--mainColor);
       transition: 0.3s ease-in-out;
       &:hover {
         cursor: pointer;
-        color: var(--mainColor);
+        color: var(--lightGray);
       }
     }
-  }
-  .active {
-    border-bottom: 2px solid var(--mainColor);
   }
   .cart-amount {
     font-size: 13px;
@@ -84,7 +81,7 @@ const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: var(--secondaryColor);
+    background-color: var(--mainColor);
     position: fixed;
     text-align: right;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};

@@ -6,6 +6,7 @@ import Banner from "../components/header/Banner"
 import Snapshot from "../components/report/Snapshot"
 import Search from "../components/search/Search"
 import IndustryList from "../components/industry/IndustryList"
+import Chart from "../components/report/Chart"
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
       </Banner>
     </Hero>
     <IndustryList />
+    <Chart />
   </Layout>
 )
 

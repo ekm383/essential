@@ -6,14 +6,14 @@ import IndustryItem from "./IndustryItem"
 const IndustryList = () => {
   return (
     <StyledList>
-      <IndustryItem />
-      <IndustryItem />
-      <IndustryItem />
-      <IndustryItem />
-      <IndustryItem />
-      <IndustryItem />
-      <IndustryItem />
-      <IndustryItem />
+      <IndustryItem industry="One" />
+      <IndustryItem industry="One" />
+      <IndustryItem industry="One" />
+      <IndustryItem industry="One" />
+      <IndustryItem industry="One" />
+      <IndustryItem industry="One" />
+      <IndustryItem industry="One" />
+      <IndustryItem industry="One" />
     </StyledList>
   )
 }
