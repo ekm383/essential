@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { FaInfoCircle } from "react-icons/fa"
 
 const Chart = () => {
   return (
@@ -11,10 +12,18 @@ const Chart = () => {
       <div>
         <h4>Current Closures:</h4>
         <ul>
-          <li>City Parks</li>
-          <li>Beaches</li>
-          <li>Bars</li>
-          <li>Hikes</li>
+          <li>
+            City Parks <FaInfoCircle />
+          </li>
+          <li>
+            Beaches <FaInfoCircle />
+          </li>
+          <li>
+            Bars <FaInfoCircle />
+          </li>
+          <li>
+            Hikes <FaInfoCircle />
+          </li>
         </ul>
       </div>
     </StyledChart>
