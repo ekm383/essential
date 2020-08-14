@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "category": "Health Care",
+    "slug": "health-care",
+    "businesses": [
+      {
+        "name": "Healthcare Sports & Massage",
+        "center": "Windward Business Center",
+        "street": "46-022 Alaloa St",
+        "city": "Kaneohe, HI 96744",
+        "phone": "(808) 247-0068",
+        "email": "",
+        "bslug": "healthcare-sports-massage"
+      },
+      {
+        "name": "Kalihi Palama Health Care",
+        "center": "",
+        "street": "546 Kaaahi St",
+        "city": "Honolulu, HI 96817",
+        "phone": "(808) 853-1700",
+        "email": "",
+        "bslug": "kalihi-palama-health-care"
+      },
+      {
+        "name": "Ko'olau Women's Healthcare",
+        "center": "",
+        "street": "642 Ulukahiki St",
+        "city": "Kailua, HI 96734",
+        "phone": "(808) 230-8500",
+        "email": "",
+        "bslug": "koolau-womens-healthcare"
+      },
+      {
+        "name": "St. Francis Medical",
+        "center": "",
+        "street": " 2230 Liliha St",
+        "city": "Honolulu, HI 96817",
+        "phone": "(808) 547-6500",
+        "email": "",
+        "bslug": "st-francis-medical"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Markets",
+    "slug": "markets",
+    "businesses": [
+      {
+        "name": "Kaneohe Market",
+        "center": "Windward Business Center",
+        "street": "46-022 Alaloa St",
+        "city": "Kaneohe, HI 96744",
+        "phone": "(808) 247-0068",
+        "email": "",
+        "bslug": "kaneohe-market"
+      },
+      {
+        "name": "Kalihi Market",
+        "center": "",
+        "street": "546 Kaaahi St",
+        "city": "Honolulu, HI 96817",
+        "phone": "(808) 853-1700",
+        "email": "",
+        "bslug": "kalihi-market"
+      },
+      {
+        "name": "Ko'olau Market",
+        "center": "",
+        "street": "642 Ulukahiki St",
+        "city": "Kailua, HI 96734",
+        "phone": "(808) 230-8500",
+        "email": "",
+        "bslug": "koolau-market"
+      },
+      {
+        "name": "Safeway Kaneohe",
+        "center": "",
+        "street": " 2230 Liliha St",
+        "city": "Honolulu, HI 96817",
+        "phone": "(808) 547-6500",
+        "email": "",
+        "bslug": "safeway-kaneohe"
+      }
+    ]
+  }
+]

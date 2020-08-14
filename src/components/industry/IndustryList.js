@@ -1,56 +1,35 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
-
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { useStaticQuery, graphql } from "gatsby"
 import IndustryItem from "./IndustryItem"
 
-class IndustryList extends Component {
-  state = {
-    industry: [
-      {
-        id: "1",
-        type: "Health Care",
-      },
-      {
-        id: "2",
-        type: "Markets",
-      },
-      {
-        id: "3",
-        type: "Farming & Fishing",
-      },
-      {
-        id: "4",
-        type: "Social Services",
-      },
-      {
-        id: "5",
-        type: "Banks",
-      },
-      {
-        id: "6",
-        type: "Hardware Stores",
-      },
-      {
-        id: "7",
-        type: "Repair & Maintenance",
-      },
-      {
-        id: "8",
-        type: "Logistics",
-      },
-    ],
-  }
-  render() {
-    return (
-      <StyledList>
-        {this.state.industry.map(({ id, type }) => (
-          <div key={id} className="list">
-            <IndustryItem industry={type} />
-          </div>
-        ))}
-      </StyledList>
-    )
-  }
+const IndustryList = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      industry: allIndustryDataJson {
+        edges {
+          node {
+            slug
+            id
+            category
+          }
+        }
+      }
+    }
+  `)
+  const industries = data.industry.edges
+  return (
+    <StyledList>
+      {industries.map(({ node }) => (
+        <div key={node.id} className="list">
+          <AniLink className="link" fade to={`/industry/${node.slug}`}>
+            <IndustryItem industry={node.category} />
+          </AniLink>
+        </div>
+      ))}
+    </StyledList>
+  )
 }
 
 const StyledList = styled.div`

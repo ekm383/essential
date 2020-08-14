@@ -1,7 +1,26 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require("path")
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
-// You can delete this file if you're not using it
+  const { data } = await graphql(`
+    query {
+      businesses: allIndustryDataJson {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
+    }
+  `)
+
+  data.businesses.edges.forEach(({ node }) => {
+    createPage({
+      path: `industry/${node.slug}`,
+      component: path.resolve("./src/templates/industry-template.js"),
+      context: {
+        slug: node.slug,
+      },
+    })
+  })
+}

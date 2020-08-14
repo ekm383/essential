@@ -21,7 +21,7 @@ const BannerWrapper = styled.div`
   flex-wrap: wrap;
   color: var(--white);
   .box {
-    flex-basis: 80%;
+    flex-basis: 95%;
     text-align: center;
     padding: 2rem 0rem 4rem 0rem;
   }
@@ -44,7 +44,7 @@ const BannerWrapper = styled.div`
     flex-basis: 90%;
     justify-content: flex-start;
     .box {
-      flex-basis: 100%;
+      flex-basis: 85%;
       padding: 2rem 0rem 6rem 0rem;
     }
     .subtitle {
